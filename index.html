@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys Wallpaper - Random Wallpapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Boys Wallpaper</h1>
+            <p class="subtitle">Discover Amazing Random Wallpapers</p>
+        </header>
+
+        <div class="controls">
+            <button id="randomBtn" class="btn btn-primary">🔄 Get Random Wallpaper</button>
+            <button id="downloadBtn" class="btn btn-secondary">⬇️ Download</button>
+            <button id="favBtn" class="btn btn-secondary">❤️ Add to Favorites</button>
+        </div>
+
+        <div class="wallpaper-container">
+            <img id="wallpaper" src="" alt="Random Wallpaper" class="wallpaper">
+            <div class="loading" id="loading">Loading...</div>
+        </div>
+
+        <div class="info-section">
+            <h3>Wallpaper Info</h3>
+            <p><strong>Resolution:</strong> <span id="resolution">-</span></p>
+            <p><strong>Category:</strong> <span id="category">-</span></p>
+            <p><strong>Source:</strong> <span id="source">-</span></p>
+        </div>
+
+        <div class="favorites-section">
+            <h3>Favorites (<span id="favCount">0</span>)</h3>
+            <div class="favorites-grid" id="favoritesGrid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
